@@ -81,20 +81,21 @@ namespace part2
     class Tcube : TSquare
     {
 
-        public Tcube(double s)
+        public Tcube(double s) : base(s)
         {
-            this.sideOfSquare = s;
+            
         }
 
-        public Tcube()
+        public Tcube() : base()
         {
 
         }
 
-        public Tcube(Tcube b)
-        {
-            this.sideOfSquare = b.sideOfSquare;
-        }
+        public Tcube(Tcube b) : base (b)
+        { }
+        
+           
+        
 
         public override double Area()
         {
